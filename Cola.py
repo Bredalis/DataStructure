@@ -21,13 +21,11 @@ class Cola:
 		if not self.estado_vacio():
 			return self.articulos[0]
 
-	def tamaño(self):
-		return len(self.articulos)
-
+# Instanciamos
 cola = Cola()
-cola.agregar_dato(1)
-cola.agregar_dato(2)
-cola.agregar_dato(3)
+
+for i in range(1, 4):
+	cola.agregar_dato(i)
 
 cola.borrar_dato()
 print(cola.mostrar_datos())

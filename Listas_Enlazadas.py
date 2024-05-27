@@ -25,9 +25,8 @@ class ListaEnlazada:
 # Instanciamos la clase
 
 lista = ListaEnlazada()
-lista.insertar_al_principio(2)
-lista.insertar_al_principio(3)
-lista.insertar_al_principio(4)
-lista.insertar_al_principio(5)
+
+for i in range(2, 6):
+	lista.insertar_al_principio(i)
 
 lista.imprimir()
