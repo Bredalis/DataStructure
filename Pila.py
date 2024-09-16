@@ -6,12 +6,12 @@ class Pila:
 	def agregar_dato(self, articulo):
 		self.articulos.append(articulo)
 
+	def estado_vacio(self):
+		return len(self.articulos) == 0
+
 	def borrar_ultimo_dato(self):
 		if not self.estado_vacio():
 			return self.articulos.pop()
-
-	def estado_vacio(self):
-		return len(self.articulos) == 0
 
 	def mostrar_datos(self):
 		if not self.estado_vacio():

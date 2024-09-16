@@ -18,5 +18,6 @@ tabla.insertar("a", 1)
 tabla.insertar("b", 2)
 tabla.insertar("c", 3)
 
-tabla.eliminar("a")
+tabla.eliminar("b")
 print(tabla.mostrar("a"))
+print(tabla.tabla)
